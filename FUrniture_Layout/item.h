@@ -1,6 +1,6 @@
-#ifndef ITEM_H
-#define ITEM_H
+#pragma once
 #include <QGraphicsObject>
+
 class item: public QGraphicsObject
 {
     Q_OBJECT
@@ -8,7 +8,7 @@ class item: public QGraphicsObject
 public:
     item(QPixmap& pix, bool mode);
     QRectF boundingRect() const;
-    void paint(QPainter* painter, const QStyleOptionGraphicsItem* styleGraphicsItem, QWidget* widget);
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *styleGraphicsItem, QWidget *widget);
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
     void mouseMoveEvent(QGraphicsSceneMouseEvent *event);
     void setDeleteMode(bool mode);
@@ -19,4 +19,4 @@ private:
 
 };
 
-#endif // ITEM_H
+

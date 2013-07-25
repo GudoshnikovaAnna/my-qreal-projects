@@ -1,5 +1,4 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
 #include <QMainWindow>
 #include <QGraphicsScene>
@@ -20,6 +19,7 @@ protected slots:
 private:
     QGraphicsScene *scene;
     QAction *deleteButton;
+    QPen rectPen;
 };
 
-#endif // MAINWINDOW_H
+
