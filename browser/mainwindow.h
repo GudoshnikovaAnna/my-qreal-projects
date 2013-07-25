@@ -1,5 +1,4 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
 #include <QMainWindow>
 
@@ -23,4 +22,4 @@ private:
     void loadUrl();
 };
 
-#endif // MAINWINDOW_H
+
